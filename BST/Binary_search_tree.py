@@ -74,3 +74,20 @@ class BinarySearchTree():
             self.search(this_node.left, key)
         else:
             self.search(this_node.right, key)
+    def  inorder(self, this_node):
+        if this_node:
+            self.inorder(this_node.left)
+            print(this_node.key, ',' ,end=' ')
+            self.inorder(this_node.right)
+            
+     def  postorder(self, this_node):
+        if this_node:
+            self.postorder(this_node.left)
+            self.postorder(this_node.right)
+            print(this_node.key, ',' ,end=' ')
+            
+     def  preorder(self, this_node):
+        if this_node:
+            print(this_node.key, ',' ,end=' ')
+            self.preorder(this_node.left)
+            self.preorder(this_node.right)
