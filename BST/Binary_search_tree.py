@@ -60,7 +60,7 @@ def delNode(self, this_node, key):
 			this_node.right = None
 			return temp
 		# case 2 children
-		temp = self.find_inorder_predecssor(self, this_node.right)
+		temp = self.find_inorder_successor(self, this_node.right)
 		this_node.key = temp
 		this_node.right = self.delNode(this_node.right , temp)
 	return this_node
