@@ -14,8 +14,8 @@ class Node:
             child.depthFirstSearch(array)
         return array
 	
-	# BFS
-	class Node:
+# BFS
+class Node:
     def __init__(self, name):
         self.children = []
         self.name = name
